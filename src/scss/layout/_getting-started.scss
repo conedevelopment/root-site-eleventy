@@ -1,10 +1,21 @@
 @use 'sprucecss/scss/spruce' as *;
 
 .l-getting-started {
-  padding-block: 3rem;
+  padding-block: get-css-variable(--section-gap);
 
   &__inner {
-    align-items: flex-start;
-    @include layout-grid('l', 20rem);
+    --column: 1;
+    align-items: start;
+    display: grid;
+    gap: spacer-clamp('m', 'xl');
+    grid-template-columns: repeat(var(--column), minmax(0, 1fr));
+
+    @include breakpoint('sm') {
+      --column: 2;
+    }
+
+    @include breakpoint('md') {
+      --column: 3;
+    }
   }
 }

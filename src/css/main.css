@@ -3912,16 +3912,23 @@ pre[class*=language-] {
 }
 
 .l-getting-started {
-  padding-block: 3rem;
+  padding-block: var(--spruce-section-gap);
 }
 .l-getting-started__inner {
-  align-items: flex-start;
+  --column: 1;
+  align-items: start;
   display: grid;
-  gap: 3rem;
+  gap: clamp(1.5rem, 5vw, 4.5rem);
+  grid-template-columns: repeat(var(--column), minmax(0, 1fr));
 }
-@supports (inline-size: min(20rem, 100%)) {
+@media (min-width: 48em) {
   .l-getting-started__inner {
-    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    --column: 2;
+  }
+}
+@media (min-width: 64em) {
+  .l-getting-started__inner {
+    --column: 3;
   }
 }
 

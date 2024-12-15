@@ -4,18 +4,18 @@ layout: "layout/front-page.html"
 hero:
     note:
         caption: "Check out the rewritten Bazar documentation"
-        url: "/templates/root/"
+        url: "/docs/extensions/bazar/"
     title: "Thoughtful <strong>Laravel Development</strong>"
     description: "Root is an administrative package designed for Laravel applications that includes support for extensions.th extension support."
     btn:
     -
         caption: "Installation"
-        class: "btn btn--primary btn--lg btn--rounded"
+        class: "btn btn--primary btn--primary-shadow btn--lg btn--rounded"
         url: "/docs/installation/"
     -
         caption: "Bazar"
         class: "btn btn--outline-primary btn--lg btn--rounded"
-        url: "/ui/extensions/bazar/"
+        url: "/docs/extensions/bazar/"
 faq:
     heading:
         title: "Good to Know"
