@@ -2,11 +2,11 @@
 @use 'sprucecss/scss/spruce' as *;
 
 .hero-wrapper {
-  background: linear-gradient(
-    0deg,
-    color('gradient-start', 'hero') 0%,
-    color('gradient-end', 'hero') 100%
-  );
+  background-blend-mode: multiply;
+  background-color: hsl(211deg 100% 20%);
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero {
@@ -54,6 +54,7 @@
   }
 
   &__title {
+    color: color('secondary');
     font-size: responsive-font-size(5rem, 45, '4vw + 1rem');
     font-weight: 400;
     letter-spacing: -0.035em;
@@ -62,12 +63,13 @@
     max-inline-size: 15ch;
     text-wrap: balance;
 
-    span {
-      font-weight: 700;
+    strong {
+      color: hsl(0deg 0% 100%);
     }
   }
 
   &__description {
+    color: hsl(0deg 0% 100% / 90%);
     font-size: responsive-font-size(1.35rem, 30, '1vw + 0.85rem');
     margin-block: 1.25rem 0;
     margin-inline: auto;

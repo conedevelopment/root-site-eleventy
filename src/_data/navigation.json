@@ -5,18 +5,6 @@
       "url": "/docs/getting-started/introduction/"
     },
     {
-      "caption": "Components",
-      "url": "/ui/getting-started/introduction/"
-    },
-    {
-      "caption": "Templates",
-      "url": "/templates/"
-    },
-    {
-      "caption": "Blog",
-      "url": "/blog/"
-    },
-    {
       "caption": "Releases",
       "url": "https://github.com/conedevelopment/sprucecss/releases",
       "external": true

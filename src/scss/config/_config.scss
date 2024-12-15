@@ -1,15 +1,21 @@
 @use 'dark-colors' as dark;
 
-$color-dark: hsl(260deg 70% 6%);
+$color-primary: hsl(211deg 100% 46%);
+$color-secondary: hsl(181deg 95% 53%);
+$color-dark: hsl(221deg 52% 6%);
 
 @use 'sprucecss/scss/spruce' with (
   $color-black: $color-dark,
+  $color-primary: $color-primary,
+  $color-secondary: $color-secondary,
   $colors: (
     'base': (
       'code-tab-background': hsl(222deg 100% 98%),
-      'primary-dark': hsl(261deg 52% 35%),
-      'primary-darkest': hsl(272deg 100% 9%),
-      'primary-lightest': hsl(259deg 53% 94%),
+      'link': hsl(211deg 100% 46%),
+      'link-hover': hsl(211deg 100% 52%),
+      'primary-dark': hsl(221deg 52% 35%),
+      'primary-darkest': hsl(221deg 52% 9%),
+      'primary-lightest': hsl(221deg 52% 94%),
     ),
     'breadcrumb': (
       'separator': hsl(0deg 0% 0% / 10%),
@@ -21,16 +27,16 @@ $color-dark: hsl(260deg 70% 6%);
       'decline-background': hsl(207deg 39% 17%),
       'decline-foreground': hsl(0deg 0% 100%),
       'discrete-background': hsla(206deg 40% 17% / 10%),
-      'discrete-background-hover': hsl(262deg 71% 49%),
+      'discrete-background-hover': hsl(211deg 100% 46%),
       'discrete-foreground': hsl(0deg 0% 10%),
       'discrete-foreground-hover': hsl(0deg 0% 100%),
       'install-background': hsl(0deg 0% 95%),
       'install-background-hover': hsl(0deg 0% 90%),
       'install-foreground': hsl(0deg 0% 10%),
       'pagination-background': hsl(263deg 40% 96%),
-      'pagination-background-hover': hsl(262deg 71% 49%),
-      'pagination-focus-ring': hsl(262deg 71% 49%),
-      'pagination-foreground': hsl(262deg 71% 49%),
+      'pagination-background-hover': hsl(211deg 100% 46%),
+      'pagination-focus-ring': hsl(211deg 100% 46%),
+      'pagination-foreground': hsl(211deg 100% 46%),
       'pagination-foreground-hover': hsl(0deg 0% 100%),
     ),
     'cookie': (
@@ -50,9 +56,9 @@ $color-dark: hsl(260deg 70% 6%);
       'note-color': hsl(216deg 50% 44%),
     ),
     'navigation': (
-      'icon-background': hsl(259deg 53% 94%),
-      'icon-background-hover': hsl(262deg 71% 49%),
-      'icon-foreground': hsl(262deg 71% 49%),
+      'icon-background': hsl(211deg 100% 94%),
+      'icon-background-hover': hsl(211deg 100% 46%),
+      'icon-foreground': hsl(211deg 100% 46%),
       'icon-foreground-hover': hsl(0deg 0% 100%),
     ),
     'modal': (
@@ -72,7 +78,7 @@ $color-dark: hsl(260deg 70% 6%);
       'regex': hsl(1deg 66% 47%),
     ),
     'search': (
-      'icon': hsl(259deg 53% 94%),
+      'icon': hsl(211deg 100% 94%),
     ),
   ),
   $dark-colors: dark.$colors,

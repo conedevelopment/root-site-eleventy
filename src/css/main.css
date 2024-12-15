@@ -358,51 +358,51 @@ template {
 
 :root {
   --spruce-base-color-background: hsl(0, 0%, 100%);
-  --spruce-base-color-blockquote-border: hsl(262, 71%, 49%);
+  --spruce-base-color-blockquote-border: hsl(211, 100%, 46%);
   --spruce-base-color-border: hsl(215, 63%, 93%);
-  --spruce-base-color-code-background: hsl(262, 71%, 97%);
-  --spruce-base-color-code-foreground: hsl(260, 70%, 6%);
-  --spruce-base-color-heading: hsl(260, 70%, 6%);
-  --spruce-base-color-link: hsl(262, 71%, 49%);
-  --spruce-base-color-link-hover: hsl(262, 71%, 39.2%);
+  --spruce-base-color-code-background: hsl(211, 100%, 97%);
+  --spruce-base-color-code-foreground: hsl(221, 52%, 6%);
+  --spruce-base-color-heading: hsl(221, 52%, 6%);
+  --spruce-base-color-link: hsl(211, 100%, 46%);
+  --spruce-base-color-link-hover: hsl(211, 100%, 52%);
   --spruce-base-color-mark-background: hsl(50, 100%, 80%);
-  --spruce-base-color-mark-foreground: hsl(260, 70%, 6%);
-  --spruce-base-color-marker: hsl(262, 71%, 49%);
-  --spruce-base-color-primary: hsl(262, 71%, 49%);
-  --spruce-base-color-secondary: hsl(227, 92%, 55%);
-  --spruce-base-color-strong: hsl(260, 70%, 6%);
+  --spruce-base-color-mark-foreground: hsl(221, 52%, 6%);
+  --spruce-base-color-marker: hsl(211, 100%, 46%);
+  --spruce-base-color-primary: hsl(211, 100%, 46%);
+  --spruce-base-color-secondary: hsl(181, 95%, 53%);
+  --spruce-base-color-strong: hsl(221, 52%, 6%);
   --spruce-base-color-text: hsl(208, 9%, 42%);
   --spruce-base-color-code-tab-background: hsl(222, 100%, 98%);
-  --spruce-base-color-primary-dark: hsl(261, 52%, 35%);
-  --spruce-base-color-primary-darkest: hsl(272, 100%, 9%);
-  --spruce-base-color-primary-lightest: hsl(259, 53%, 94%);
+  --spruce-base-color-primary-dark: hsl(221, 52%, 35%);
+  --spruce-base-color-primary-darkest: hsl(221, 52%, 9%);
+  --spruce-base-color-primary-lightest: hsl(221, 52%, 94%);
 }
 
 :root {
-  --spruce-btn-color-primary-background: hsl(262, 71%, 49%);
-  --spruce-btn-color-primary-background-hover: hsl(262, 71%, 39%);
+  --spruce-btn-color-primary-background: hsl(211, 100%, 46%);
+  --spruce-btn-color-primary-background-hover: hsl(211, 100%, 36%);
   --spruce-btn-color-primary-foreground: hsl(0, 0%, 100%);
-  --spruce-btn-color-primary-shadow: hsl(262, 71%, 84%);
-  --spruce-btn-color-secondary-background: hsl(227, 92%, 55%);
-  --spruce-btn-color-secondary-background-hover: hsl(227, 92%, 45%);
+  --spruce-btn-color-primary-shadow: hsl(211, 100%, 81%);
+  --spruce-btn-color-secondary-background: hsl(181, 95%, 53%);
+  --spruce-btn-color-secondary-background-hover: hsl(181, 95%, 43%);
   --spruce-btn-color-secondary-foreground: hsl(0, 0%, 100%);
-  --spruce-btn-color-secondary-shadow: hsl(227, 92%, 90%);
-  --spruce-btn-color-dark-background: hsl(260, 70%, 6%);
+  --spruce-btn-color-secondary-shadow: hsl(181, 95%, 88%);
+  --spruce-btn-color-dark-background: hsl(221, 52%, 6%);
   --spruce-btn-color-dark-background-hover: hsl(260, 70%, 12%);
   --spruce-btn-color-dark-foreground: hsl(0, 0%, 100%);
   --spruce-btn-color-decline-background: hsl(207, 39%, 17%);
   --spruce-btn-color-decline-foreground: hsl(0, 0%, 100%);
   --spruce-btn-color-discrete-background: hsla(206, 40%, 17%, 0.1);
-  --spruce-btn-color-discrete-background-hover: hsl(262, 71%, 49%);
+  --spruce-btn-color-discrete-background-hover: hsl(211, 100%, 46%);
   --spruce-btn-color-discrete-foreground: hsl(0, 0%, 10%);
   --spruce-btn-color-discrete-foreground-hover: hsl(0, 0%, 100%);
   --spruce-btn-color-install-background: hsl(0, 0%, 95%);
   --spruce-btn-color-install-background-hover: hsl(0, 0%, 90%);
   --spruce-btn-color-install-foreground: hsl(0, 0%, 10%);
   --spruce-btn-color-pagination-background: hsl(263, 40%, 96%);
-  --spruce-btn-color-pagination-background-hover: hsl(262, 71%, 49%);
-  --spruce-btn-color-pagination-focus-ring: hsl(262, 71%, 49%);
-  --spruce-btn-color-pagination-foreground: hsl(262, 71%, 49%);
+  --spruce-btn-color-pagination-background-hover: hsl(211, 100%, 46%);
+  --spruce-btn-color-pagination-focus-ring: hsl(211, 100%, 46%);
+  --spruce-btn-color-pagination-foreground: hsl(211, 100%, 46%);
   --spruce-btn-color-pagination-foreground-hover: hsl(0, 0%, 100%);
 }
 
@@ -411,24 +411,24 @@ template {
   --spruce-form-color-background-disabled: hsl(0, 0%, 95%);
   --spruce-form-color-border: hsl(260, 4%, 70%);
   --spruce-form-color-border-disabled: hsl(215, 63%, 93%);
-  --spruce-form-color-border-focus: hsl(262, 71%, 49%);
-  --spruce-form-color-check-background: hsl(262, 71%, 49%);
-  --spruce-form-color-check-focus-ring: hsl(262, 71%, 49%);
+  --spruce-form-color-border-focus: hsl(211, 100%, 46%);
+  --spruce-form-color-check-background: hsl(211, 100%, 46%);
+  --spruce-form-color-check-focus-ring: hsl(211, 100%, 46%);
   --spruce-form-color-check-foreground: hsl(0, 0%, 100%);
   --spruce-form-color-group-label-background: hsl(210, 60%, 98%);
   --spruce-form-color-group-label-foreground: hsl(208, 9%, 42%);
   --spruce-form-color-invalid: hsl(0, 71%, 51%);
   --spruce-form-color-invalid-focus-ring: hsla(0, 71%, 51%, 0.25);
-  --spruce-form-color-label: hsl(260, 70%, 6%);
-  --spruce-form-color-legend: hsl(260, 70%, 6%);
+  --spruce-form-color-label: hsl(221, 52%, 6%);
+  --spruce-form-color-legend: hsl(221, 52%, 6%);
   --spruce-form-color-placeholder: hsl(208, 7%, 40%);
-  --spruce-form-color-range-thumb-background: hsl(262, 71%, 49%);
-  --spruce-form-color-range-thumb-focus-ring: hsl(262, 71%, 49%);
+  --spruce-form-color-range-thumb-background: hsl(211, 100%, 46%);
+  --spruce-form-color-range-thumb-focus-ring: hsl(211, 100%, 46%);
   --spruce-form-color-range-track-background: hsl(215, 63%, 93%);
-  --spruce-form-color-ring-focus: hsla(262, 71%, 49%, 0.25);
-  --spruce-form-color-select-foreground: hsl(260, 70%, 6%);
-  --spruce-form-color-switch-background: hsl(262, 71%, 49%);
-  --spruce-form-color-switch-focus-ring: hsl(262, 71%, 49%);
+  --spruce-form-color-ring-focus: hsla(211, 100%, 46%, 0.25);
+  --spruce-form-color-select-foreground: hsl(221, 52%, 6%);
+  --spruce-form-color-switch-background: hsl(211, 100%, 46%);
+  --spruce-form-color-switch-focus-ring: hsl(211, 100%, 46%);
   --spruce-form-color-switch-foreground: hsl(0, 0%, 100%);
   --spruce-form-color-text: hsl(208, 9%, 42%);
   --spruce-form-color-valid: hsl(150, 100%, 33%);
@@ -437,7 +437,7 @@ template {
 
 :root {
   --spruce-selection-color-foreground: hsl(0, 0%, 100%);
-  --spruce-selection-color-background: hsl(262, 71%, 49%);
+  --spruce-selection-color-background: hsl(211, 100%, 46%);
 }
 
 :root {
@@ -449,7 +449,7 @@ template {
 :root {
   --spruce-table-color-border: hsl(215, 63%, 93%);
   --spruce-table-color-caption: hsl(208, 9%, 42%);
-  --spruce-table-color-heading: hsl(260, 70%, 6%);
+  --spruce-table-color-heading: hsl(221, 52%, 6%);
   --spruce-table-color-hover: hsla(0, 0%, 0%, 0.05);
   --spruce-table-color-stripe: hsla(0, 0%, 0%, 0.025);
   --spruce-table-color-text: hsl(208, 9%, 42%);
@@ -465,7 +465,7 @@ template {
 }
 
 :root {
-  --spruce-footer-color-background: hsl(260, 70%, 6%);
+  --spruce-footer-color-background: hsl(221, 52%, 6%);
 }
 
 :root {
@@ -480,9 +480,9 @@ template {
 }
 
 :root {
-  --spruce-navigation-color-icon-background: hsl(259, 53%, 94%);
-  --spruce-navigation-color-icon-background-hover: hsl(262, 71%, 49%);
-  --spruce-navigation-color-icon-foreground: hsl(262, 71%, 49%);
+  --spruce-navigation-color-icon-background: hsl(211, 100%, 94%);
+  --spruce-navigation-color-icon-background-hover: hsl(211, 100%, 46%);
+  --spruce-navigation-color-icon-foreground: hsl(211, 100%, 46%);
   --spruce-navigation-color-icon-foreground-hover: hsl(0, 0%, 100%);
 }
 
@@ -505,7 +505,7 @@ template {
 }
 
 :root {
-  --spruce-search-color-icon: hsl(259, 53%, 94%);
+  --spruce-search-color-icon: hsl(211, 100%, 94%);
 }
 
 :root {
@@ -1241,7 +1241,7 @@ html[dir=rtl] .form-control--valid, html[dir=rtl] .form-control--invalid {
 }
 
 select.form-control:not([multiple]):not([size]) {
-  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M12,12.507l-3.816,-3.815c-0.171,-0.172 -0.45,-0.172 -0.622,-0l-0.933,0.933c-0.172,0.172 -0.172,0.451 0,0.623l5.06,5.06c0.172,0.172 0.45,0.172 0.622,0l5.06,-5.06c0.172,-0.172 0.172,-0.451 -0,-0.623l-0.933,-0.933c-0.172,-0.172 -0.451,-0.172 -0.622,-0l-3.816,3.815Z" style="fill:hsl%28260, 70%, 6%%29;"/%3e%3c/svg%3e');
+  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M12,12.507l-3.816,-3.815c-0.171,-0.172 -0.45,-0.172 -0.622,-0l-0.933,0.933c-0.172,0.172 -0.172,0.451 0,0.623l5.06,5.06c0.172,0.172 0.45,0.172 0.622,0l5.06,-5.06c0.172,-0.172 0.172,-0.451 -0,-0.623l-0.933,-0.933c-0.172,-0.172 -0.451,-0.172 -0.622,-0l-3.816,3.815Z" style="fill:hsl%28221, 52%, 6%%29;"/%3e%3c/svg%3e');
   background-position: center right 0.5em;
   background-repeat: no-repeat;
   background-size: 1.25em auto;
@@ -1826,7 +1826,7 @@ legend {
   --spruce-base-color-link: hsl(261, 54%, 70%);
   --spruce-base-color-link-hover: hsl(261, 54%, 76%);
   align-items: center;
-  background-color: hsl(260, 70%, 6%);
+  background-color: hsl(221, 52%, 6%);
   border-radius: var(--spruce-border-radius-lg);
   box-shadow: 0 0 3rem hsla(0, 0%, 0%, 0.1);
   color: var(--spruce-base-color-text);
@@ -2446,7 +2446,7 @@ textarea.pagefind-ui__search-input {
 }
 .pagefind-ui__form::before {
   --size: 1em;
-  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"%3e%3cpath d="M19.501,9.75c-0,2.152 -0.699,4.14 -1.875,5.752l5.935,5.94c0.585,0.586 0.585,1.537 -0,2.123c-0.586,0.586 -1.538,0.586 -2.124,0l-5.935,-5.939c-1.612,1.181 -3.6,1.875 -5.752,1.875c-5.386,-0 -9.75,-4.364 -9.75,-9.751c0,-5.386 4.364,-9.75 9.75,-9.75c5.387,-0 9.751,4.364 9.751,9.75Zm-9.751,6.751c3.704,-0 6.751,-3.047 6.751,-6.751c-0,-3.703 -3.047,-6.75 -6.751,-6.75c-3.703,0 -6.75,3.047 -6.75,6.75c0,3.704 3.047,6.751 6.75,6.751Z" style="fill:hsl%28259, 53%, 94%%29;"/%3e%3c/svg%3e');
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"%3e%3cpath d="M19.501,9.75c-0,2.152 -0.699,4.14 -1.875,5.752l5.935,5.94c0.585,0.586 0.585,1.537 -0,2.123c-0.586,0.586 -1.538,0.586 -2.124,0l-5.935,-5.939c-1.612,1.181 -3.6,1.875 -5.752,1.875c-5.386,-0 -9.75,-4.364 -9.75,-9.751c0,-5.386 4.364,-9.75 9.75,-9.75c5.387,-0 9.751,4.364 9.751,9.75Zm-9.751,6.751c3.704,-0 6.751,-3.047 6.751,-6.751c-0,-3.703 -3.047,-6.75 -6.751,-6.75c-3.703,0 -6.75,3.047 -6.75,6.75c0,3.704 3.047,6.751 6.75,6.751Z" style="fill:hsl%28211, 100%, 94%%29;"/%3e%3c/svg%3e');
   background-size: var(--size);
   block-size: var(--size);
   content: "";
@@ -3439,7 +3439,11 @@ pre[class*=language-] {
 }
 
 .hero-wrapper {
-  background: linear-gradient(0deg, var(--spruce-hero-color-gradient-start) 0%, var(--spruce-hero-color-gradient-end) 100%);
+  background-blend-mode: multiply;
+  background-color: hsl(211, 100%, 20%);
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero__caption {
@@ -3481,6 +3485,7 @@ pre[class*=language-] {
   margin-block-start: 1.5rem !important;
 }
 .hero__title {
+  color: var(--spruce-base-color-secondary);
   font-size: clamp(2.75rem, 4vw + 1rem, 5rem);
   font-weight: 400;
   letter-spacing: -0.035em;
@@ -3489,10 +3494,11 @@ pre[class*=language-] {
   max-inline-size: 15ch;
   text-wrap: balance;
 }
-.hero__title span {
-  font-weight: 700;
+.hero__title strong {
+  color: hsl(0, 0%, 100%);
 }
 .hero__description {
+  color: hsla(0, 0%, 100%, 0.9);
   font-size: clamp(0.945rem, 1vw + 0.85rem, 1.35rem);
   margin-block: 1.25rem 0;
   margin-inline: auto;

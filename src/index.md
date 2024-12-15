@@ -3,9 +3,9 @@ title: "Home"
 layout: "layout/front-page.html"
 hero:
     note:
-        caption: "Check out our Root admin template!"
+        caption: "Check out the rewritten Bazar documentation"
         url: "/templates/root/"
-    title: "A minimalistic, low-level <strong>CSS framework</strong>"
+    title: "Thoughtful <strong>Laravel Development</strong>"
     description: "A low-level, lightweight and modern CSS system, authoring tool built on Sass. Give your project a solid foundation."
     btn:
     -
