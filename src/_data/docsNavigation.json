@@ -1,109 +1,43 @@
 [
   {
-    "title": "Getting Started",
+    "title": "Root",
     "items": [
-      {
-        "caption": "Introduction",
-        "url": "/docs/getting-started/introduction"
-      },
       {
         "caption": "Installation",
-        "url": "/docs/getting-started/installation"
+        "url": "/docs/installation/"
       },
       {
-        "caption": "Structure and Code",
-        "url": "/docs/getting-started/structure-and-code"
+        "caption": "Dashboard",
+        "url": "/docs/dashboard/"
       },
       {
-        "caption": "Sass",
-        "url": "/docs/getting-started/sass"
+        "caption": "Resources",
+        "url": "/docs/resources/"
       },
       {
-        "caption": "Accessibility",
-        "url": "/docs/getting-started/accessibility"
+        "caption": "Fields",
+        "url": "/docs/fields/"
       },
       {
-        "caption": "Internationalization",
-        "url": "/docs/getting-started/internationalization"
+        "caption": "Actions",
+        "url": "/docs/actions/"
       },
       {
-        "caption": "Print",
-        "url": "/docs/getting-started/print"
+        "caption": "Filters",
+        "url": "/docs/filters/"
       },
       {
-        "caption": "Contribution",
-        "url": "/docs/getting-started/contribution"
-      },
-      {
-        "caption": "Appendix",
-        "url": "/docs/getting-started/appendix"
+        "caption": "Widgets",
+        "url": "/docs/widgets/"
       }
     ]
   },
   {
-    "title": "Customization",
+    "title": "Exetensions",
     "items": [
       {
-        "caption": "Variables",
-        "url": "/docs/customization/variables"
-      },
-      {
-        "caption": "Settings",
-        "url": "/docs/customization/settings"
-      },
-      {
-        "caption": "Themes",
-        "url": "/docs/customization/themes"
-      }
-    ]
-  },
-  {
-    "title": "Sass",
-    "items": [
-      {
-        "caption": "Colors",
-        "url": "/docs/sass/colors"
-      },
-      {
-        "caption": "Variables",
-        "url": "/docs/sass/variables"
-      },
-      {
-        "caption": "Mixins",
-        "url": "/docs/sass/mixins"
-      },
-      {
-        "caption": "Functions",
-        "url": "/docs/sass/functions"
-      }
-    ]
-  },
-  {
-    "title": "Elements",
-    "items": [
-      {
-        "caption": "Generators",
-        "url": "/docs/elements/generators"
-      },
-      {
-        "caption": "Typography",
-        "url": "/docs/elements/typography"
-      },
-      {
-        "caption": "Tables",
-        "url": "/docs/elements/tables"
-      },
-      {
-        "caption": "Buttons",
-        "url": "/docs/elements/buttons"
-      },
-      {
-        "caption": "Forms",
-        "url": "/docs/elements/forms"
-      },
-      {
-        "caption": "Media",
-        "url": "/docs/elements/media"
+        "caption": "Bazar",
+        "url": "/docs/extensions/bazar/"
       }
     ]
   }

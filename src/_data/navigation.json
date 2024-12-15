@@ -2,11 +2,11 @@
   "header": [
     {
       "caption": "Docs",
-      "url": "/docs/getting-started/introduction/"
+      "url": "/docs/installation/"
     },
     {
       "caption": "Releases",
-      "url": "https://github.com/conedevelopment/sprucecss/releases",
+      "url": "https://github.com/conedevelopment/root/releases",
       "external": true
     }
   ],

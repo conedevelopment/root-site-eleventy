@@ -2,21 +2,19 @@
 @use 'sprucecss/scss/spruce' as *;
 
 .site-footer {
-  background-color: color('background', 'footer');
-  color: hsl(0deg 0% 100% / 85%);
   font-size: 1rem;
 
   a {
-    color: color('link', $only-color: true, $map: dark.$colors);
+    color: color('text');
 
     &:hover,
     &:focus {
-      color: color('link-hover', $only-color: true, $map: dark.$colors);
+      color: color('primary');
     }
   }
 
   &__slogan {
-    color: hsl(0deg 0% 100%);
+    color: color('heading');
     font-family: var(--doc-heading-font-family);
     font-size: responsive-font-size(3rem, 30, '4vw + 1rem');
     font-weight: 700;
@@ -48,13 +46,8 @@
   }
 
   &__title {
-    color: hsl(0 0% 100%);
     font-size: font-size('h4');
     margin-block: 0 spacer('m');
-  }
-
-  strong {
-    color: hsl(0 0% 100%);
   }
 
   &__navigation {
@@ -63,7 +56,6 @@
     font-size: 1rem;
 
     a {
-      color: hsl(0 0% 100% / 85%);
       text-decoration: none;
 
       &:hover,

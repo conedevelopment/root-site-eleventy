@@ -6,16 +6,16 @@ hero:
         caption: "Check out the rewritten Bazar documentation"
         url: "/templates/root/"
     title: "Thoughtful <strong>Laravel Development</strong>"
-    description: "A low-level, lightweight and modern CSS system, authoring tool built on Sass. Give your project a solid foundation."
+    description: "Root is an administrative package designed for Laravel applications that includes support for extensions.th extension support."
     btn:
     -
-        caption: "Get Started"
+        caption: "Installation"
         class: "btn btn--primary btn--lg btn--rounded"
-        url: "/docs/getting-started/introduction/"
+        url: "/docs/installation/"
     -
-        caption: "Components"
+        caption: "Bazar"
         class: "btn btn--outline-primary btn--lg btn--rounded"
-        url: "/ui/getting-started/introduction/"
+        url: "/ui/extensions/bazar/"
 faq:
     heading:
         title: "Good to Know"
