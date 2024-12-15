@@ -1,0 +1,105 @@
+@use 'sprucecss/scss/spruce' as *;
+
+@include generate-form-control('.pagefind-ui__search-input', false, false, false);
+
+.pagefind-ui {
+  position: relative;
+
+  &__search-input {
+    border: 0;
+    border-block-end: 1px solid color('border');
+    border-end-end-radius: 0;
+    border-end-start-radius: 0;
+    padding: spacer('s') spacer('xl') spacer('s') 2.75rem !important;
+
+    &:focus {
+      border-block-end: 1px solid color('border');
+      box-shadow: none;
+    }
+  }
+
+  &__form {
+    @include layout-stack('m');
+
+    &::before {
+      --size: 1em;
+      @include field-icon(
+        config('search', $form-icon, false),
+        color('icon', 'search', true)
+      );
+      background-size: var(--size);
+      block-size: var(--size);
+      content: '';
+      display: inline-flex;
+      inline-size: var(--size);
+      inset: 1.25em auto auto spacer('s');
+      position: absolute;
+    }
+  }
+
+  &__search-clear {
+    background: none;
+    border: 0;
+    font-size: 0.7rem;
+    font-weight: 700;
+    inset-block-start: 2em;
+    inset-inline-end: spacer('s');
+    margin-block-start: 0;
+    position: absolute;
+    text-transform: uppercase;
+  }
+
+  &__drawer {
+    @include scrollbar;
+    margin: spacer('s') spacer('s') spacer('m');
+    max-block-size: 20rem;
+    overflow-y: auto;
+    padding-inline: spacer('s');
+  }
+
+  &__results {
+    @include clear-list;
+    @include layout-stack('s');
+    padding-inline-end: spacer('m');
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__results-area {
+    @include layout-stack('xs');
+  }
+
+  &__result-inner {
+    @include layout-stack('xxs');
+  }
+
+  &__result-title {
+    font-weight: 700;
+  }
+
+  &__button {
+    @include clear-btn;
+    color: color('link');
+    margin-block-start: spacer('s');
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: color('link-hover');
+    }
+  }
+
+  &__hidden {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-block-start: 0;
+    min-block-size: 10rem;
+
+    &::before {
+      content: 'No recent searches';
+    }
+  }
+}

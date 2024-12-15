@@ -1,0 +1,93 @@
+@use 'sprucecss/scss/spruce' as *;
+
+.site-header {
+  position: relative;
+  z-index: 10;
+
+  &__inner {
+    --block-size: 5rem;
+    align-items: center;
+    block-size: var(--block-size);
+    display: flex;
+    flex-wrap: wrap;
+    gap: spacer-clamp('s', 'l', 3vw);
+    justify-content: space-between;
+
+    @include breakpoint('md') {
+      --block-size: 6rem;
+    }
+  }
+
+  &__logo {
+    align-items: center;
+    display: flex;
+
+    a {
+      display: inline-flex;
+    }
+
+    svg {
+      block-size: 1.725rem;
+      bottom: -0.1em;
+      inline-size: auto;
+      position: relative;
+    }
+
+    &--ui {
+      svg {
+        block-size: 2.1rem;
+      }
+    }
+  }
+
+  &__column {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    gap: spacer-clamp('s', 'l');
+  }
+
+  &__actions {
+    display: flex;
+    gap: spacer('s');
+
+    @include breakpoint('lg') {
+      gap: spacer('l');
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: spacer('s');
+
+    .btn:last-child {
+      display: none;
+
+      @include breakpoint('md') {
+        display: inline-flex;
+      }
+    }
+  }
+
+  &__search-btn {
+    @include breakpoint('lg') {
+      display: none;
+    }
+  }
+
+  &__navigation {
+    margin-inline-start: auto;
+
+    @include breakpoint('lg') {
+      margin-inline-start: 0;
+    }
+
+    ul {
+      border-block-start: 1px solid color('border');
+
+      @include breakpoint('lg') {
+        border-block-start: none;
+      }
+    }
+  }
+}

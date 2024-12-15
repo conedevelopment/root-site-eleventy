@@ -1,0 +1,9 @@
+@use 'sprucecss/scss/spruce' as *;
+
+.l-post {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding-block-end: get-css-variable(--section-gap);
+  }
+}

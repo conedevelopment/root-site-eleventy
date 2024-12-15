@@ -1,0 +1,89 @@
+@use 'dark-colors' as dark;
+
+$color-dark: hsl(260deg 70% 6%);
+
+@use 'sprucecss/scss/spruce' with (
+  $color-black: $color-dark,
+  $colors: (
+    'base': (
+      'code-tab-background': hsl(222deg 100% 98%),
+      'primary-dark': hsl(261deg 52% 35%),
+      'primary-darkest': hsl(272deg 100% 9%),
+      'primary-lightest': hsl(259deg 53% 94%),
+    ),
+    'breadcrumb': (
+      'separator': hsl(0deg 0% 0% / 10%),
+    ),
+    'btn': (
+      'dark-background': $color-dark,
+      'dark-background-hover': hsl(260deg 70% 12%),
+      'dark-foreground': hsl(0deg 0% 100%),
+      'decline-background': hsl(207deg 39% 17%),
+      'decline-foreground': hsl(0deg 0% 100%),
+      'discrete-background': hsla(206deg 40% 17% / 10%),
+      'discrete-background-hover': hsl(262deg 71% 49%),
+      'discrete-foreground': hsl(0deg 0% 10%),
+      'discrete-foreground-hover': hsl(0deg 0% 100%),
+      'install-background': hsl(0deg 0% 95%),
+      'install-background-hover': hsl(0deg 0% 90%),
+      'install-foreground': hsl(0deg 0% 10%),
+      'pagination-background': hsl(263deg 40% 96%),
+      'pagination-background-hover': hsl(262deg 71% 49%),
+      'pagination-focus-ring': hsl(262deg 71% 49%),
+      'pagination-foreground': hsl(262deg 71% 49%),
+      'pagination-foreground-hover': hsl(0deg 0% 100%),
+    ),
+    'cookie': (
+      'background': hsl(207deg 95% 8%),
+      'foreground': hsl(0deg 0% 100%),
+    ),
+    'footer': (
+      'background': $color-dark,
+    ),
+    'ide': (
+      'header-background': hsl(0deg 0% 100%),
+    ),
+    'hero': (
+      'gradient-end': hsl(0deg 0% 100%),
+      'gradient-start': hsl(210deg 100% 98%),
+      'note-background': hsl(210deg 100% 97%),
+      'note-color': hsl(216deg 50% 44%),
+    ),
+    'navigation': (
+      'icon-background': hsl(259deg 53% 94%),
+      'icon-background-hover': hsl(262deg 71% 49%),
+      'icon-foreground': hsl(262deg 71% 49%),
+      'icon-foreground-hover': hsl(0deg 0% 100%),
+    ),
+    'modal': (
+      'background': hsl(210deg 60% 98% / 70%),
+    ),
+    'prism': (
+      'background': hsl(0deg 0% 98%),
+      'boolean': hsl(0deg 44% 53%),
+      'class-name': hsl(0deg 0% 7%),
+      'color': hsl(243deg 14% 29%),
+      'comment': hsl(225deg 14% 46%),
+      'constant': hsl(221deg 57% 52%),
+      'deleted': hsla(1deg 83% 63% / 56%),
+      'namespace': hsl(173deg 100% 24%),
+      'number': hsl(315deg 90% 35%),
+      'punctuation': hsl(279deg 50% 53%),
+      'regex': hsl(1deg 66% 47%),
+    ),
+    'search': (
+      'icon': hsl(259deg 53% 94%),
+    ),
+  ),
+  $dark-colors: dark.$colors,
+  $form-icon: (
+    'search': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M19.501,9.75c-0,2.152 -0.699,4.14 -1.875,5.752l5.935,5.94c0.585,0.586 0.585,1.537 -0,2.123c-0.586,0.586 -1.538,0.586 -2.124,0l-5.935,-5.939c-1.612,1.181 -3.6,1.875 -5.752,1.875c-5.386,-0 -9.75,-4.364 -9.75,-9.751c0,-5.386 4.364,-9.75 9.75,-9.75c5.387,-0 9.751,4.364 9.751,9.75Zm-9.751,6.751c3.704,-0 6.751,-3.047 6.751,-6.751c-0,-3.703 -3.047,-6.75 -6.751,-6.75c-3.703,0 -6.75,3.047 -6.75,6.75c0,3.704 3.047,6.751 6.75,6.751Z" style="fill:#COLOR#;"/></svg>',
+  ),
+  $layout: (
+    'container-inline-size': 94rem,
+  ),
+  $settings: (
+    'css-custom-properties': true,
+    'html-smooth-scrolling': true,
+  ),
+);

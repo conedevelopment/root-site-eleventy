@@ -1,0 +1,65 @@
+<header class="site-header">
+    <div class="container">
+        <div class="site-header__inner">
+            <div class="site-header__column">
+                <a class="site-header__logo {% if page.fileSlug == 'ui' %}site-header__logo--ui{% endif %}" href="/" aria-label="Spruce CSS">
+                    {% if page.fileSlug == 'ui' %}
+                        {% svgIcon "./src/img/spruce-ui-logo.svg" %}
+                    {% else %}
+                        {% svgIcon "./src/img/spruce-logo.svg" %}
+                    {% endif %}
+                </a>
+                <nav
+                    class="site-navigation site-header__navigation"
+                    aria-label="Site"
+                >
+                    <button
+                        class="btn btn--primary btn--icon btn--rounded site-navigation__btn"
+                        data-action="navigation-toggle"
+                        aria-controls="primary-menu"
+                        aria-expanded="false"
+                        aria-label="Menu"
+                    >
+                        {% svgIcon "./src/_includes/icon/menu.svg", "btn__icon" %}
+                    </button>
+
+                    {% if navigation.header.length > 0 %}
+                    <ul class="navigation-menu">
+                        {% for item in navigation.header %}
+                        <li>
+                            <a
+                                href="{{ item.url }}"
+                                {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
+                            >
+                                {{ item.caption }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </nav>
+            </div>
+            {% if site.socials.length %}
+                <div class="site-header__actions">
+                    {% include "partial/open-search.html" %}
+                    <button class="btn btn--primary btn--icon btn--rounded site-header__search-btn" aria-label="Search" data-action="open-search">
+                        {% svgIcon "./src/_includes/icon/search.svg", "btn__icon" %}
+                    </button>
+                    <div class="site-header__socials">
+                        {% for social in site.socials %}
+                            <a
+                                aria-label="{{ social.name }}"
+                                class="btn btn--primary btn--icon btn--rounded"
+                                href="{{ social.url }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {% svgIcon social.icon, "btn__icon" %}
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</header>

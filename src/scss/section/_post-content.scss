@@ -1,0 +1,69 @@
+@use 'sprucecss/scss/spruce' as *;
+
+.post-content {
+  @include layout-stack;
+
+  @include breakpoint('md') {
+    font-size: 1.0375rem;
+  }
+
+  &--blog {
+    :is(dd, dl, dl, h1, h2, h3, h4, h5, h6, hr, ul, ol, p:not(p:has(img)), blockquote, form, pre, [class*=language-], .notification, .anchor-heading) {
+      @include layout-center(null, 45rem);
+    }
+  }
+
+  * + h2,
+  * + h3,
+  * + .anchor-heading {
+    margin-block-start: spacer('l');
+  }
+
+  img,
+  iframe {
+    border-radius: var(--doc-border-radius-sm);
+  }
+
+  iframe {
+    aspect-ratio: 16 / 10;
+    block-size: auto;
+    inline-size: 100;
+  }
+
+  > picture:first-child + * {
+    margin-block-start: spacer('l');
+  }
+
+  .anchor-heading h2,
+  .anchor-heading h3 {
+    scroll-margin-top: spacer('m');
+  }
+
+  pre[class*='language-'] {
+    position: relative;
+
+    &::before {
+      border-radius: 0 0 config('border-radius-sm', $display) config('border-radius-sm', $display);
+      color: color('comment', 'prism');
+      content: attr(data-language);
+      display: inline-block;
+      font-family: var(--doc-heading-font-family);
+      font-size: 0.6rem;
+      font-weight: 500;
+      inset: 1rem 1rem auto auto;
+      line-height: 1;
+      pointer-events: none;
+      position: absolute;
+      text-transform: uppercase;
+    }
+  }
+
+  a[href*='youtube'] {
+    img {
+      aspect-ratio: 16 / 9;
+      inline-size: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

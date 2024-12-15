@@ -1,0 +1,42 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="site-footer__top">
+            <div class="site-footer__col">
+                <p class="site-footer__slogan">Another <br/>CSS framework.</p>
+                <a class="site-footer__logo" href="/" aria-label="Spruce CSS">
+                    {% svgIcon "./src/img/spruce-logo-without-text.svg" %}
+                </a>
+            </div>
+            {% for block in navigation.footer %}
+            <div class="site-footer__col">
+                <h3 class="site-footer__title" id="site-footer-title-{{ block.title | slugify }}">
+                    {{ block.title }}
+                </h3>
+
+                <ul
+                    class="site-footer__navigation"
+                    aria-labelledby="site-footer-title-{{ block.title | slugify }}"
+                >
+                    {% for item in block.items %}
+                    <li>
+                        <a
+                            href="{{ item.url }}"
+                            {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
+                        >
+                            <span>{{ item.caption }}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="site-footer__bottom">
+            <a href="https://conedevelopment.com/" class="site-footer__cone-logo" aria-label="Cone">
+                {% svgIcon "./src/img/cone-logo.svg" %}
+            </a>
+            <p class="site-footer__copyright">Code is licensed under <a href="https://github.com/conedevelopment/sprucecss/blob/master/LICENSE/">MIT</a>, docs is <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. - Version <strong>{{ site.version }}</strong> - <a href="/privacy-policy">Privacy Policy</a></p>
+            {% include "partial/theme-switcher.html" %}
+        </div>
+    </div>
+</footer>

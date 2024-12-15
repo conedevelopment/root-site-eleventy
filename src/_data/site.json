@@ -1,0 +1,17 @@
+{
+  "name": "Root",
+  "url": "https://root.conedevelopment.com",
+  "version": "2.5.3",
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/conedevelopment/root",
+      "icon": "./src/_includes/icon/github.svg"
+    },
+    {
+      "name": "X",
+      "url": "https://twitter.com/conedevelopment",
+      "icon": "./src/_includes/icon/x.svg"
+    }
+  ]
+}
