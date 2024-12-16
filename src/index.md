@@ -9,9 +9,9 @@ hero:
     description: "Root is an extendable Laravel admin package with first-party e-commerce solution."
     btn:
     -
-        caption: "Installation"
+        caption: "Core Concepts"
         class: "btn btn--primary btn--primary-shadow btn--lg btn--rounded"
-        url: "/docs/installation/"
+        url: "/docs/core-concepts/"
     -
         caption: "Bazar"
         class: "btn btn--outline-primary btn--lg btn--rounded"

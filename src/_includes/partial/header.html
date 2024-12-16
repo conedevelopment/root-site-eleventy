@@ -2,7 +2,7 @@
     <div class="container">
         <div class="site-header__inner">
             <div class="site-header__column">
-                <a class="site-header__logo {% if page.fileSlug == '' %}site-header__logo--light{% endif %}" href="/" aria-label="Root">
+                <a class="site-header__logo" href="/" aria-label="Root">
                     {% svgIcon "./src/img/root-logo.svg" %}
                 </a>
                 <nav
@@ -45,7 +45,7 @@
                         {% for social in site.socials %}
                             <a
                                 aria-label="{{ social.name }}"
-                                class="btn btn--primary btn--icon btn--rounded"
+                                class="btn btn--primary btn--primary-shadow btn--icon btn--rounded"
                                 href="{{ social.url }}"
                                 target="_blank"
                                 rel="noopener noreferrer"

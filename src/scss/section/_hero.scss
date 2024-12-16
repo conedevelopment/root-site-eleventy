@@ -4,6 +4,8 @@
 .hero-wrapper {
   @include set-css-variable((
     --btn-color-primary-shadow: hsl(211deg 100% 25%),
+    --btn-color-primary-outline-border: hsl(0deg 0% 100% / 25%),
+    --btn-color-primary-outline-foreground: hsl(0deg 0% 100%),
   ));
   background-blend-mode: multiply;
   background-color: hsl(211deg 100% 15%);

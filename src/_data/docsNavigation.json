@@ -3,6 +3,10 @@
     "title": "Root",
     "items": [
       {
+        "caption": "Core Concepts",
+        "url": "/docs/core-concepts/"
+      },
+      {
         "caption": "Installation",
         "url": "/docs/installation/"
       },

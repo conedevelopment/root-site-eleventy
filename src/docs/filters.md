@@ -1,7 +1,7 @@
 ---
 title: "Filters"
 github: "https://github.com/conedevelopment/root-docs/blob/master/filters.md"
-order: 6
+order: 7
 ---
 
 Filters are responsible for transforming the current request to a database query.

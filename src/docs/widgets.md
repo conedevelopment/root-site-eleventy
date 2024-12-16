@@ -1,7 +1,7 @@
 ---
 title: "Widgets"
 github: "https://github.com/conedevelopment/root-docs/blob/master/widgets.md"
-order: 7
+order: 8
 ---
 
 Widgets are cards that hold some information or any content you want to display.

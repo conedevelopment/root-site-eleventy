@@ -1,7 +1,7 @@
 ---
 title: "Actions"
 github: "https://github.com/conedevelopment/root-docs/blob/master/actions.md"
-order: 5
+order: 6
 ---
 
 Actions are runnable tasks on a given collection of models. Actions can be registered in resources and extracts. Also, actions are easily configurable and customizable for the current user.

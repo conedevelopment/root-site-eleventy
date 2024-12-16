@@ -20,7 +20,7 @@
     font-weight: 700;
     grid-auto-rows: auto;
     line-height: calc(#{config('line-height-heading', $typography)} * 1.15);
-    margin-block: 0 2rem;
+    margin-block: spacer('xs') 0;
   }
 
   &__top {
@@ -37,11 +37,10 @@
 
   &__logo {
     display: inline-flex;
-    opacity: 0.15;
 
     svg {
       block-size: auto;
-      inline-size: 2.5rem;
+      inline-size: 3rem;
     }
   }
 

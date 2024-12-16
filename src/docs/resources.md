@@ -1,7 +1,7 @@
 ---
 title: "Resources"
 github: "https://github.com/conedevelopment/root-docs/blob/master/resources.md"
-order: 3
+order: 4
 ---
 
 Resources are basically extra layers around models. Using resources it's easy to build up a CRUD workflow for a model, using [fields](/docs/fields), [filters](/docs/filters), [actions](/docs/actions) or [widgets](/docs/widgets).
