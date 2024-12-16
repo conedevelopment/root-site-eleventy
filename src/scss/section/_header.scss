@@ -4,6 +4,12 @@
   position: relative;
   z-index: 10;
 
+  &--light {
+    @include set-css-variable((
+      --base-color-text: red,
+    ));
+  }
+
   &__inner {
     --block-size: 5rem;
     align-items: center;

@@ -76,7 +76,7 @@
   }
 
   &__bottom {
-    border-block-start: 1px solid color('border', $only-color: true, $map: dark.$colors);
+    border-block-start: 1px solid color('border');
     display: flex;
     flex-direction: column;
     gap: spacer('s') spacer('m');

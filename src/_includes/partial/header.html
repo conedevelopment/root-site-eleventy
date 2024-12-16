@@ -2,7 +2,7 @@
     <div class="container">
         <div class="site-header__inner">
             <div class="site-header__column">
-                <a class="site-header__logo {% if page.fileSlug == '/' %}site-header__logo--light{% endif %}" href="/" aria-label="Root">
+                <a class="site-header__logo {% if page.fileSlug == '' %}site-header__logo--light{% endif %}" href="/" aria-label="Root">
                     {% svgIcon "./src/img/root-logo.svg" %}
                 </a>
                 <nav

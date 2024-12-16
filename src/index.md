@@ -6,7 +6,7 @@ hero:
         caption: "Check out the rewritten Bazar documentation"
         url: "/docs/extensions/bazar/"
     title: "Thoughtful <strong>Laravel Development</strong>"
-    description: "Root is an administrative package designed for Laravel applications that includes support for extensions.th extension support."
+    description: "Root is an extendable Laravel admin package with first-party e-commerce solution."
     btn:
     -
         caption: "Installation"
