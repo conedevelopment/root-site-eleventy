@@ -41,7 +41,7 @@ composer require conedevelopment/bazar
 
 After installing the package, run the `bazar:install` command.
 
-> Please note: if you are using Windows, you might open your terminal or development environment as a system administrator.
+{% notification %}Please note: if you are using Windows, you might open your terminal or development environment as a system administrator.{% endnotification %}
 
 ```sh
 php artisan bazar:install
@@ -99,7 +99,7 @@ Bazar provides some default drivers out of the box: `Local Pickup` and `Weight B
 
 The class that implements the interface must implement the `shipping` method, where the relationship is defined between the model and the `Bazar\Models\Shipping` model:
 
-> By default, the `Bazar\Models\Order` and the `Bazar\Models\Cart` models are implementing the contract.
+{% notification %}By default, the `Bazar\Models\Order` and the `Bazar\Models\Cart` models are implementing the contract.{% endnotification %}
 
 ```php
 use Cone\Bazar\Models\Shipping;
@@ -152,7 +152,7 @@ Bazar comes with a cart service by default, which manages cart models and their 
 
 You can access the current cart by using the `Bazar\Support\Facades\Cart` facade.
 
-> When using the `Cart` facade, keep in mind, the **facade** forwards calls to the `Cart` **model**; this provides a more flexible approach.
+{% notification %}When using the `Cart` facade, keep in mind, the **facade** forwards calls to the `Cart` **model**; this provides a more flexible approach.{% endnotification %}
 
 Bazar provides the [`CookieDriver`](#cookie-driver) by default.
 
@@ -229,7 +229,7 @@ Bazar supports multiple currencies by default. Imagine a scenario when your cust
 
 However, this behavior can be controlled by the lock/unlock mechanism. When the cart is *unlocked*, Bazar will update the items on currency change. But when the cart is *locked*, it will keep the original currency and its values.
 
-> Note, you may retrieve the `Cart` model using the `Cart` facade for this feature.
+{% notification %}Note, you may retrieve the `Cart` model using the `Cart` facade for this feature.{% endnotification %}
 
 ```php
 use Cone\Bazar\Models\Cart;
@@ -265,7 +265,7 @@ $expired = Cart::expired()->get();
 
 Also, Bazar provides a command to clean all the expired carts easily. You may run the `php artisan bazar:clear-carts` command to delete the database's expired cart records.
 
-> In some cases, you may delete all the existing carts. To do so, pass the `--all` flag to the command.
+{% notification %}In some cases, you may delete all the existing carts. To do so, pass the `--all` flag to the command.{% endnotification %}
 
 You may call this command from the scheduler to automatize the cleanup process:
 
@@ -404,7 +404,7 @@ use Cone\Bazar\Support\Facades\Tax;
 Tax::disable();
 ```
 
-> Note, when disabling taxes, the previously set taxes won't be updated or recalculated. They stay untouched.
+{% notification %}Note, when disabling taxes, the previously set taxes won't be updated or recalculated. They stay untouched.{% endnotification %}
 
 ## Discounts
 
@@ -471,4 +471,4 @@ use Cone\Bazar\Support\Facades\Discount;
 Discount::disable();
 ```
 
-> Note, when disabling discounts, the previously set discounts won't be updated or recalculated. They stay untouched.
+{% notification %}Note, when disabling discounts, the previously set discounts won't be updated or recalculated. They stay untouched.{% endnotification %}

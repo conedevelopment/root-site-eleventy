@@ -6,7 +6,7 @@ order: 3
 
 ## Widgets
 
-> For the detailed documentation visit the [widgets](/docs/widgets) section.
+{% notification %}For the detailed documentation visit the [widgets](/docs/widgets) section.{% endnotification %}
 
 You may register your dashboard widgets by using the `RootServiceProvider` which is published and automatically registered when the `root:install` artisan command is called.
 

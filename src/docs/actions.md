@@ -37,7 +37,7 @@ public function actions(Request $request): array
 
 ### Fields
 
-> For the detailed documentation visit the [fields](/docs/fields) section.
+{% notification %}For the detailed documentation visit the [fields](/docs/fields) section.{% endnotification %}
 
 You may define fields for any action:
 
@@ -60,7 +60,7 @@ class Publish extends Action
 }
 ```
 
-> When running the action, the submitted form data will be accessible in the `Request` object passed to the action's `handle` method.
+{% notification %}When running the action, the submitted form data will be accessible in the `Request` object passed to the action's `handle` method.{% endnotification %}
 
 ### Authorization
 

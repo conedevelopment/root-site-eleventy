@@ -52,7 +52,7 @@ Text::make('Title')
     });
 ```
 
-> Alternatively, you may do default value definitions on your model directly.
+{% notification %}Alternatively, you may do default value definitions on your model directly.{% endnotification %}
 
 ### Formatting Value
 
@@ -124,7 +124,7 @@ $field->rules(['string', 'required'])
     });
 ```
 
-> You can pass an `array` or a `Closure` to the rule methods.
+{% notification %}You can pass an `array` or a `Closure` to the rule methods.{% endnotification %}
 
 The value passed to the `rules` method will be present for both creating and updating models.
 
@@ -148,7 +148,7 @@ $field->searchable(false);
 
 The `Boolean` field is typically a handler for `boolean` model attributes:
 
-> Don't forget to [cast](https://laravel.com/docs/master/eloquent-mutators#attribute-casting) you model attribute as a `boolean`.
+{% notification %}Don't forget to [cast](https://laravel.com/docs/master/eloquent-mutators#attribute-casting) you model attribute as a `boolean`.{% endnotification %}
 
 ```php
 $field = Boolean::make(__('Enabled'), 'enabled');
@@ -158,7 +158,7 @@ $field = Boolean::make(__('Enabled'), 'enabled');
 
 The `Checkbox` field is typically a handler for `json` model attributes (array of values):
 
-> Don't forget to [cast](https://laravel.com/docs/master/eloquent-mutators#attribute-casting) you model attribute as a `json` or `array`.
+{% notification %}Don't forget to [cast](https://laravel.com/docs/master/eloquent-mutators#attribute-casting) you model attribute as a `json` or `array`.{% endnotification %}
 
 ```php
 $field = Checkbox::make(__('Permissions'), 'permissions')
@@ -180,7 +180,7 @@ The `Color` field is typically a handler for `color` model attributes:
 $field = Color::make(__('Background Color'), 'bg_color');
 ```
 
-> You may use the `hex_color` validation rule for this field. By default no rules attached.
+{% notification %}You may use the `hex_color` validation rule for this field. By default no rules attached.{% endnotification %}
 
 ### Date
 
@@ -190,7 +190,7 @@ The `Date` field is typically a handler for `date` or `datetime` model attribute
 $field = Date::make(__('Expires at'), 'expires_at');
 ```
 
-> You may use the `date` validation rule for this field. By default no rules attached.
+{% notification %}You may use the `date` validation rule for this field. By default no rules attached.{% endnotification %}
 
 You can also apply modifiers on a `Date` field:
 
@@ -272,7 +272,7 @@ The `Email` field is typically a handler for `email` model attributes:
 $field = Email::make(__('Billing Email'), 'billing_email');
 ```
 
-> You may use the `email` validation rule for this field. By default no rules attached.
+{% notification %}You may use the `email` validation rule for this field. By default no rules attached.{% endnotification %}
 
 ### Fieldset
 
@@ -451,7 +451,7 @@ You may also want to customize the slug separator:
 $field->separator('_');
 ```
 
-> The default slug separator is `-`.
+{% notification %}The default slug separator is `-`.{% endnotification %}
 
 You may also want to completely customize the slug generation logic:
 
@@ -554,7 +554,7 @@ Media::scopeQuery(function (Request $request, Builder $query, Model $model): Bui
 });
 ```
 
-> This will apply the query resolution logic to all `Media` fields.
+{% notification %}This will apply the query resolution logic to all `Media` fields.{% endnotification %}
 
 You may apply local customization using the `withRelatableQuery` method:
 
@@ -594,7 +594,7 @@ $field->aggregate('count', 'id');
 $field->aggregate('sum', 'tax');
 ```
 
-> The available aggregate functions: `count`, `min`, `max`, `sum` and `avg`.
+{% notification %}The available aggregate functions: `count`, `min`, `max`, `sum` and `avg`.{% endnotification %}
 
 #### Grouping
 
@@ -671,7 +671,7 @@ The `BelongsTo` field is typically a handler for an existing `Illuminate\Databas
 $field = BelongsTo::make(__('Author'), 'author');
 ```
 
-> The `BelongsTo` field cannot be a subresource.
+{% notification %}The `BelongsTo` field cannot be a subresource.{% endnotification %}
 
 ### BelongsToMany
 
@@ -683,7 +683,7 @@ $field = BelongsToMany::make(__('Teams'), 'teams');
 
 When using as subresource, you may define editable pivot fields. Use the `withPivotFields` instead of the `withFields`:
 
-> Only existing models can be attached, creating relatable models from the subresource is not supported.
+{% notification %}Only existing models can be attached, creating relatable models from the subresource is not supported.{% endnotification %}
 
 ```php
 $field->withPivotFields(static function (Request $request): array {

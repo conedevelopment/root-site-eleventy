@@ -26,7 +26,7 @@ composer require conedevelopment/root
 
 After installing the package, run the `root:install` command. It will run the migrations and publish the compiled assets that you may override later.
 
-> Please note: if you are using Windows, you might open your terminal or development environment as a system administrator.
+{% notification %}Please note: if you are using Windows, you might open your terminal or development environment as a system administrator.{% endnotification %}
 
 Also, you may populate your local database with _fake_ data. To do so, pass the `--seed` flag to the command.
 

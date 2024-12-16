@@ -60,7 +60,7 @@ $resource->authorize(static function (Request $request): bool {
 
 ### Fields
 
-> For the detailed documentation visit the [fields](/docs/fields) section.
+{% notification %}For the detailed documentation visit the [fields](/docs/fields) section.{% endnotification %}
 
 Fields are handlers for the model attributes. They are responsible for saving and displaying the given attribute of the resource model. You can easily define fields on your resource by using the `fields` method:
 
@@ -87,7 +87,7 @@ class PostResource extends Resource
 
 ### Filters
 
-> For the detailed documentation visit the [filters](/docs/filters) section.
+{% notification %}For the detailed documentation visit the [filters](/docs/filters) section.{% endnotification %}
 
 Filters are responsible for transforming the current request to a database query. You can easily define filters on your resource by using the `filters` method:
 
@@ -112,7 +112,7 @@ class PostResource extends Resource
 
 ### Actions
 
-> For the detailed documentation visit the [actions](/docs/actions) section.
+{% notification %}For the detailed documentation visit the [actions](/docs/actions) section.{% endnotification %}
 
 Actions are responsible for performing a specific action on a set of models. You can easily define actions on your resource by using the `actions` method:
 
@@ -137,7 +137,7 @@ class PostResource extends Resource
 
 ### Widgets
 
-> For the detailed documentation visit the [widgets](/docs/widgets) section.
+{% notification %}For the detailed documentation visit the [widgets](/docs/widgets) section.{% endnotification %}
 
 Widgets are cards that hold some information or any content you want to display. You can easily define widgets on your resource by using the `widgets` method:
 

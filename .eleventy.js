@@ -130,20 +130,6 @@ module.exports = config => {
     return Image.generateHTML(metadata, imageAttributes);
   });
 
-  config.addShortcode('color', (color, name, value, bordered = false) => {
-    return `<div class="color-card ${bordered ? 'color-card--bordered' : ''}">
-              <span class="color-card__color" style="background-color: ${color};"></span>
-              <span class="color-card__caption">
-                <span class="color-card__name">${name}</span>
-                <span class="color-card__value">${value}</span>
-              </span>
-            </div>`;
-  });
-
-  config.addPairedShortcode('preview', content => {
-    return `<div class="preview">${content}</div>`;
-  });
-
   /**
    * Displaying a notification block.
    * @param {string} content - The content of the notification.

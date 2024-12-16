@@ -45,7 +45,7 @@ public function register(): void
 }
 ```
 
-> Note, you should extend the **base model** then bind it to the **interface**.
+{% notification %}Note, you should extend the **base model** then bind it to the **interface**.{% endnotification %}
 
 ### Proxies
 
