@@ -11,7 +11,7 @@ $color-dark: hsl(221deg 52% 6%);
   $colors: (
     'base': (
       'code-tab-background': hsl(222deg 100% 98%),
-      'link': hsl(211deg 100% 46%),
+      'link': $color-primary,
       'link-hover': hsl(211deg 100% 52%),
       'primary-dark': hsl(221deg 52% 35%),
       'primary-darkest': hsl(221deg 52% 9%),
@@ -27,17 +27,20 @@ $color-dark: hsl(221deg 52% 6%);
       'decline-background': hsl(207deg 39% 17%),
       'decline-foreground': hsl(0deg 0% 100%),
       'discrete-background': hsla(206deg 40% 17% / 10%),
-      'discrete-background-hover': hsl(211deg 100% 46%),
+      'discrete-background-hover': $color-primary,
       'discrete-foreground': hsl(0deg 0% 10%),
       'discrete-foreground-hover': hsl(0deg 0% 100%),
       'install-background': hsl(0deg 0% 95%),
       'install-background-hover': hsl(0deg 0% 90%),
       'install-foreground': hsl(0deg 0% 10%),
       'pagination-background': hsl(263deg 40% 96%),
-      'pagination-background-hover': hsl(211deg 100% 46%),
-      'pagination-focus-ring': hsl(211deg 100% 46%),
-      'pagination-foreground': hsl(211deg 100% 46%),
+      'pagination-background-hover': $color-primary,
+      'pagination-focus-ring': $color-primary,
+      'pagination-foreground': $color-primary,
       'pagination-foreground-hover': hsl(0deg 0% 100%),
+      'primary-background-hover': hsl(211deg 100% 54%),
+      'primary-outline-border': $color-primary,
+      'primary-outline-foreground': $color-primary,
     ),
     'cookie': (
       'background': hsl(207deg 95% 8%),
@@ -91,5 +94,6 @@ $color-dark: hsl(221deg 52% 6%);
   $settings: (
     'css-custom-properties': true,
     'html-smooth-scrolling': true,
+    'prefix': 'root',
   ),
 );

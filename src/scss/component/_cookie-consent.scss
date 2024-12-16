@@ -14,8 +14,8 @@
 .cookie-consent {
   @include set-css-variable((
     --base-color-text: hsl(0deg 0% 97%),
-    --base-color-link: color('primary', $only-color: true, $map: dark.$colors),
-    --base-color-link-hover: color.scale(color('primary', $only-color: true, $map: dark.$colors), $lightness: 20%),
+    --base-color-link: color('secondary'),
+    --base-color-link-hover: color.scale(color('secondary', $only-color: true), $lightness: -10%),
   ));
 
   align-items: center;

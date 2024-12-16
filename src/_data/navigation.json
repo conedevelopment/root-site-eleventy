@@ -12,44 +12,36 @@
   ],
   "footer": [
     {
-      "title": "Getting Started",
+      "title": "Root",
       "items": [
         {
-          "caption": "Introduction",
-          "url": "/docs/getting-started/introduction/"
+          "caption": "Core Concepts",
+          "url": "/docs/core-concepts/"
         },
         {
           "caption": "Installation",
-          "url": "/docs/getting-started/installation/"
+          "url": "/docs/installation/"
         },
         {
-          "caption": "Structure and Code",
-          "url": "/docs/getting-started/structure-and-code/"
+          "caption": "Dashboard",
+          "url": "/docs/dashboard/"
         },
         {
-          "caption": "Sass",
-          "url": "/docs/getting-started/sass/"
+          "caption": "Resources",
+          "url": "/docs/resources/"
         }
       ]
     },
     {
-      "title": "Elements",
+      "title": "Bazar",
       "items": [
         {
-          "caption": "Typography",
-          "url": "/docs/elements/typography/"
+          "caption": "Documentation",
+          "url": "/docs/extensions/bazar/"
         },
         {
-          "caption": "Tables",
-          "url": "/docs/elements/tables/"
-        },
-        {
-          "caption": "Buttons",
-          "url": "/docs/elements/buttons/"
-        },
-        {
-          "caption": "Forms",
-          "url": "/docs/elements/forms/"
+          "caption": "GitHub",
+          "url": "https://github.com/conedevelopment/bazar"
         }
       ]
     },
@@ -57,20 +49,16 @@
       "title": "More From Us",
       "items": [
         {
-          "caption": "Services",
-          "url": "https://conedevelopment.com/services/"
+          "caption": "Laravel Development",
+          "url": "https://conedevelopment.com/services/application-development/"
         },
         {
-          "caption": "Pine development blog",
-          "url": "https://pineco.de/"
+          "caption": "WordPress Development",
+          "url": "https://conedevelopment.com/services/website-development/"
         },
         {
-          "caption": "Root Laravel admin",
-          "url": "https://root.conedevelopment.com/"
-        },
-        {
-          "caption": "Bite-Sized Accessibility",
-          "url": "https://bite-sized-a11y.com/"
+          "caption": "Spruce CSS Framework",
+          "url": "https://sprucecss.com/"
         }
       ]
     }

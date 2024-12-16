@@ -33,16 +33,10 @@
     }
 
     svg {
-      block-size: 1.725rem;
+      block-size: 1.5rem;
       bottom: -0.1em;
       inline-size: auto;
       position: relative;
-    }
-
-    &--ui {
-      svg {
-        block-size: 2.1rem;
-      }
     }
   }
 

@@ -8,17 +8,26 @@
   background-color: color('background');
   border-radius: config('border-radius-lg', $display);
   display: flex;
+  flex-direction: column;
   gap: spacer('m');
 
   &__caption {
-    @include layout-stack('xs');
+    @include layout-stack('s');
   }
 
   picture {
-    --size: 5rem;
+    --size: 4rem;
     block-size: var(--size);
     flex-shrink: 0;
     inline-size: var(--size);
+  }
+
+  &__title {
+    font-size: responsive-font-size(1.7rem);
+  }
+
+  &__description {
+    font-size: responsive-font-size(1.1rem);
   }
 
   &__link {

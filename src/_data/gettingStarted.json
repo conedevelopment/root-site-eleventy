@@ -1,32 +1,32 @@
 [
   {
-    "title": "Documentation",
-    "description": "Learn about Spruce CSS through our extensive documentation.",
+    "title": "Just what you need",
+    "description": "Root is an admin package for Laravel applications. It offers a simple model management with a robust resource API and a modern and fast UI.",
     "thumbnail": "./src/img/getting-started/atom.png"
   },
   {
-    "title": "Components",
-    "description": "Explore our extensive UI library built with Spruce CSS.",
+    "title": "Dead simple",
+    "description": "Root is a quite simple, drop-in admin package. It requires less configuration when installing, it's easier to migrate between versions.",
     "thumbnail": "./src/img/getting-started/beaker.png"
   },
   {
-    "title": "Blog",
-    "description": "Read about front-end development and concepts of Spruce CSS.",
+    "title": "For the small and medium",
+    "description": "Root is scoped to small, medium-sized projects: e-commerce or generic CMS projects.",
     "thumbnail": "./src/img/getting-started/conical-flask.png"
   },
   {
-    "title": "Documentation",
-    "description": "Learn about Spruce CSS through our extensive documentation.",
+    "title": "E-commerce with Bazar",
+    "description": "With Bazar our goal is to provide a simple solution for those who want to build a small to medium-sized e-commerce system.",
     "thumbnail": "./src/img/getting-started/dropper.png"
   },
   {
-    "title": "Components",
-    "description": "Explore our extensive UI library built with Spruce CSS.",
+    "title": "Apline.js",
+    "description": "We choosed Apline.js for our JS framework because it is modern and easy to use without any compile process.",
     "thumbnail": "./src/img/getting-started/experiment.png"
   },
   {
-    "title": "Blog",
-    "description": "Read about front-end development and concepts of Spruce CSS.",
+    "title": "Spruce CSS",
+    "description": "A low-level, lightweight and modern CSS system, authoring tool built on Sass. Give your project a solid foundation.",
     "thumbnail": "./src/img/getting-started/clipboard.png"
   }
 ]

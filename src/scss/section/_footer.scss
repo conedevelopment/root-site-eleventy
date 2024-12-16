@@ -4,15 +4,6 @@
 .site-footer {
   font-size: 1rem;
 
-  a {
-    color: color('text');
-
-    &:hover,
-    &:focus {
-      color: color('primary');
-    }
-  }
-
   &__slogan {
     color: color('heading');
     font-family: var(--doc-heading-font-family);
@@ -32,6 +23,17 @@
 
     @include breakpoint(md) {
       --gtc: minmax(0, 2.5fr) repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  &__col {
+    a {
+      color: color('text');
+
+      &:hover,
+      &:focus {
+        color: color('primary');
+      }
     }
   }
 
@@ -61,7 +63,7 @@
       &:focus,
       &:active,
       &[aria-current='page'] {
-        color: color('link-hover', $only-color: true, $map: dark.$colors);
+        color: color('link-hover');
       }
 
       &[aria-current='page'] {
