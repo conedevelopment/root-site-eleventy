@@ -107,7 +107,7 @@ module.exports = config => {
 
   config.addCollection('docs', collection => {
     return [...collection.getFilteredByGlob('./src/docs/**/*.md')].sort((a, b) => {
-      return a.data.order - b.data.order;
+      return b.data.order - a.data.order;
     });
   });
 

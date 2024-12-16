@@ -1,7 +1,7 @@
 ---
 title: "Bazar"
 github: "https://github.com/conedevelopment/root-docs/blob/master/bazar.md"
-order: 9
+order: 10
 ---
 
 ## The Scope and Scale

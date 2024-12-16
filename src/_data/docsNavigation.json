@@ -33,6 +33,10 @@
       {
         "caption": "Widgets",
         "url": "/docs/widgets/"
+      },
+      {
+        "caption": "Contribution",
+        "url": "/docs/contribution/"
       }
     ]
   },

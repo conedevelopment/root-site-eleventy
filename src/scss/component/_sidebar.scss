@@ -2,9 +2,11 @@
 
 .sidebar-section {
   &__title {
-    color: color('heading');
-    font-size: config('font-size-base', $typography);
+    color: color('text');
+    font-size: 0.8rem;
+    letter-spacing: 1px;
     margin-block: 0;
+    text-transform: uppercase;
   }
 
   &__navigation {

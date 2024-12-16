@@ -1,13 +1,16 @@
 @use 'sprucecss/scss/spruce' as *;
 
 .site-header {
+  $this: &;
   position: relative;
   z-index: 10;
 
-  &--light {
-    @include set-css-variable((
-      --base-color-text: red,
-    ));
+  &--border {
+    border-block-end: 1px solid color('border');
+
+    #{$this}__inner {
+      --block-size: 5.35rem;
+    }
   }
 
   &__inner {
@@ -33,7 +36,7 @@
     }
 
     svg {
-      block-size: 1.5rem;
+      block-size: 1.45rem;
       bottom: -0.1em;
       inline-size: auto;
       position: relative;
