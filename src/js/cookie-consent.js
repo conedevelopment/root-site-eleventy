@@ -3,7 +3,7 @@ import {
 } from './cookie.js';
 
 (() => {
-  const prefix = 'cone';
+  const prefix = 'root';
   const btns = document.querySelectorAll('button[data-action="cookie"]');
   let caption = '';
   let consentModal = null;
