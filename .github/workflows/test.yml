@@ -1,0 +1,106 @@
+name: Test
+
+on:
+    push:
+        branches: [ main ]
+    pull_request:
+        branches: [ main ]
+
+    workflow_dispatch:
+
+jobs:
+    lint:
+        name: Lint
+        runs-on: ubuntu-latest
+
+        steps:
+        -
+            name: Checkout repository
+            uses: actions/checkout@v4
+        -
+            name: Set up Node.js
+            uses: actions/setup-node@v4
+            with:
+                node-version: '21.x'
+        -
+            name: Install dependencies
+            run: npm ci
+        -
+            name: Run SASS linter
+            run: npm run sass:lint
+        -
+            name: Run JavaScript linter
+            run: npm run js:lint
+        -
+            name: Build website
+            run: npm run build
+        -
+            name: Check EditorConfig configuration
+            run: test -f .editorconfig
+        -
+            name: Check adherence to EditorConfig
+            uses: greut/eclint-action@v0
+            with:
+                eclint_args: |
+                    -exclude=css/*
+
+    lint_front_matter:
+        name: Lint Front Matter
+        runs-on: ubuntu-latest
+
+        steps:
+        -
+            name: Checkout repository
+            uses: actions/checkout@v4
+        -
+            name: Cache pip
+            uses: actions/cache@v4
+            with:
+                path: '~/.cache/pip'
+                key: '${{ runner.os }}-pip-yamllint'
+        -
+            name: Install yamllint
+            run: pip install --user yamllint
+        -
+            name: Remove document contents
+            run: |
+                git ls-files -z -- 'src/**.md' | xargs -0 -n 1 -- sed -i -e 'N;P;/---\n$/Q;D'
+        -
+            name: Check Front Matter
+            run: |
+                git ls-files -z -- 'src/**.md' | xargs -0 -n 1 -- python -m yamllint
+
+    check_links:
+        name: Check Links
+        runs-on: ubuntu-latest
+
+        steps:
+        -
+            name: Checkout repository
+            uses: actions/checkout@v4
+        -
+            name: Run Lychee
+            uses: lycheeverse/lychee-action@v1.10.0
+            with:
+                args: >-
+                    --verbose
+                    --no-progress
+                    --require-https
+                    --max-concurrency 2
+                    --user-agent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'
+                    './**/*.md'
+                output: ${{ runner.temp }}/lychee/out.md
+                fail: true
+
+    typos_check:
+        name: "文A Typos check"
+        runs-on: "ubuntu-22.04"
+        timeout-minutes: 1
+
+        steps:
+        -
+            name: "Checkout repository"
+            uses: "actions/checkout@v4"
+        -
+            name: "Search for misspellings"
+            uses: "crate-ci/typos@master"
