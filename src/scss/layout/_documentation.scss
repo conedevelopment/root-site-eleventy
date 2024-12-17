@@ -50,8 +50,8 @@
     display: grid;
     grid-auto-rows: min-content;
     grid-template-columns: minmax(0, 1fr);
-    row-gap: spacer('m');
     padding-block-start: spacer-clamp('m', 'l');
+    row-gap: spacer('m');
 
     @include breakpoint('lg') {
       grid-template-columns: minmax(0, 1fr) minmax(0, 20rem);
