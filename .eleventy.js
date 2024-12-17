@@ -102,6 +102,7 @@ module.exports = config => {
   config.addPassthroughCopy('./src/css/**');
   config.addPassthroughCopy('./src/js/**');
   config.addPassthroughCopy('./src/font/**');
+  config.addPassthroughCopy('./_redirects');
   config.addPassthroughCopy({ './src/img/favicon/favicon.ico': '/favicon.ico' });
   config.addPassthroughCopy({ './src/robots.txt': '/robots.txt' });
 

@@ -1,2 +1,1 @@
-User-agent: *
-Disallow:
+https://bazar.conedevelopment.com/* https://root.conedevelopment.com/:splat 301
