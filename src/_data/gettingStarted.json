@@ -1,32 +1,32 @@
 [
   {
-    "title": "Just what you need",
+    "title": "Just What You Need",
     "description": "Root is an admin package for Laravel applications. It offers a simple model management with a robust resource API and a modern and fast UI.",
     "thumbnail": "./src/img/getting-started/atom.png"
   },
   {
-    "title": "Dead simple",
-    "description": "Root is a quite simple, drop-in admin package. It requires less configuration when installing, it's easier to migrate between versions.",
+    "title": "Dead Simple",
+    "description": "Root is a relatively simple drop-in admin package. Installing requires less configuration; it's easier to migrate between versions.",
     "thumbnail": "./src/img/getting-started/beaker.png"
   },
   {
-    "title": "For the small and medium",
+    "title": "For the Small and Medium",
     "description": "Root is scoped to small, medium-sized projects: e-commerce or generic CMS projects.",
     "thumbnail": "./src/img/getting-started/conical-flask.png"
   },
   {
-    "title": "E-commerce with Bazar",
+    "title": "E-Commerce With Bazar",
     "description": "With Bazar our goal is to provide a simple solution for those who want to build a small to medium-sized e-commerce system.",
     "thumbnail": "./src/img/getting-started/dropper.png"
   },
   {
     "title": "Apline.js",
-    "description": "We choosed Apline.js for our JS framework because it is modern and easy to use without any compile process.",
+    "description": "We chose Apline.js for our JS framework because it is modern and easy to use without any compilation process.",
     "thumbnail": "./src/img/getting-started/experiment.png"
   },
   {
     "title": "Spruce CSS",
-    "description": "A low-level, lightweight and modern CSS system, authoring tool built on Sass. Give your project a solid foundation.",
+    "description": "A low-level, lightweight, modern CSS system, authoring tool built on Sass. Give your project a solid foundation.",
     "thumbnail": "./src/img/getting-started/bacteria.png"
   }
 ]
