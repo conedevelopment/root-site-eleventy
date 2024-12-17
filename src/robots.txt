@@ -1,1 +1,2 @@
-https://bazar.conedevelopment.com/* https://root.conedevelopment.com/docs/extensions/bazar/ 301
+User-agent: *
+Disallow:
