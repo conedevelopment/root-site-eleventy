@@ -7,7 +7,7 @@ if (getCookie('root-cookie-law-analytics') === 'accepted') {
     window.dataLayer.push(arguments); // eslint-disable-line
   }
 
-  const rootGtagId = 'xxxxxxxxxxx';
+  const rootGtagId = 'G-MG36FDCN9L';
   const rootGtagScript = document.createElement('script');
 
   rootGtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${rootGtagId}`;
