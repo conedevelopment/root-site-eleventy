@@ -1,18 +1,18 @@
 <p>
-  <a href="https://sprucecss.com/">
+  <a href="https://root.conedevelopment.com/">
     <br>
     <picture>
-      <source media="(prefers-color-scheme: light)" srcset="./.github/spruce-logo-dark.svg">
-      <source media="(prefers-color-scheme: dark)" srcset="./.github/spruce-logo-light.svg">
-      <img alt="Spruce CSS" width="140" src="./.github/spruce-logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./.github/root-logo-dark.svg">
+      <source media="(prefers-color-scheme: dark)" srcset="./.github/root-logo-light.svg">
+      <img alt="Root" width="87" src="./.github/root-logo-dark.svg">
     </picture>
     <br>
   </a>
 </p>
 
-**Spruce CSS uses [11ty](https://www.11ty.dev/) for its documentation (v2).**
+**Root uses [11ty](https://www.11ty.dev/) for its documentation (v2).**
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/32f689b9-2e24-462f-be66-22e1233d7f9b/deploy-status)](https://app.netlify.com/sites/sprucecss/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ebbca775-ad23-4ae1-8079-73af81b31fe0/deploy-status)](https://app.netlify.com/sites/conedevelopment-root/deploys)
 
 ## Get Up and Running
 

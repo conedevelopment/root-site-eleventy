@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'sprucecss/scss/spruce' as *;
 
 @include generate-color-variables(
@@ -16,7 +17,31 @@
     );
   }
 
-  .cta {
-    border-block-start: 1px solid color('border');
+  .site-navigation {
+    a {
+      &:hover,
+      &[aria-current='page'] {
+        color: color('secondary');
+      }
+    }
+  }
+
+  .open-search {
+    .btn--outline-primary {
+      @include set-css-variable((
+        --btn-color-primary-outline-border: hsl(0deg 0% 100% / 25%),
+        --btn-color-primary-outline-foreground: hsl(0deg 0% 100%),
+      ));
+    }
+  }
+
+  .hero-wrapper {
+    background-color: hsl(211deg 70% 12.5%);
+  }
+
+  .post-navigation-item {
+    &__title {
+      color: color('secondary');
+    }
   }
 }

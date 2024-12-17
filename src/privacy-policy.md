@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-description: "Updated on 28 January 2022"
+description: "Updated on 17 December 2024"
 layout: "layout/page.html"
 ---
 

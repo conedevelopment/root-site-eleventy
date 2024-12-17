@@ -1617,20 +1617,20 @@ legend {
 }
 
 :root[data-theme-mode=dark] {
-  --root-base-color-background: hsl(206, 100%, 7%);
-  --root-base-color-blockquote-border: hsl(261, 54%, 70%);
+  --root-base-color-background: hsl(211, 70%, 10%);
+  --root-base-color-blockquote-border: hsl(211, 100%, 46%);
   --root-base-color-border: hsla(0, 0%, 100%, 0.08);
   --root-base-color-code-background: hsl(207, 64%, 18%);
   --root-base-color-code-foreground: hsl(0, 0%, 95%);
   --root-base-color-code-tab-background: hsla(0, 0%, 0%, 0.15);
   --root-base-color-heading: hsl(0, 0%, 95%);
-  --root-base-color-link: hsl(261, 54%, 70%);
-  --root-base-color-link-hover: hsl(261, 54%, 76%);
+  --root-base-color-link: hsl(181, 95%, 53%);
+  --root-base-color-link-hover: hsl(181, 95%, 62.4%);
   --root-base-color-mark-background: hsl(50, 100%, 80%);
-  --root-base-color-mark-foreground: hsl(206, 100%, 7%);
-  --root-base-color-marker: hsl(261, 54%, 70%);
-  --root-base-color-primary: hsl(261, 54%, 70%);
-  --root-base-color-secondary: hsl(227, 92%, 55%);
+  --root-base-color-mark-foreground: hsl(211, 70%, 10%);
+  --root-base-color-marker: hsl(211, 100%, 46%);
+  --root-base-color-primary: hsl(211, 100%, 46%);
+  --root-base-color-secondary: hsl(181, 95%, 53%);
   --root-base-color-strong: hsl(0, 0%, 97%);
   --root-base-color-text: hsl(0, 0%, 97%);
 }
@@ -1640,41 +1640,27 @@ legend {
 }
 
 :root[data-theme-mode=dark] {
-  --root-btn-color-discrete-background-hover: hsl(261, 52%, 59%);
-  --root-btn-color-discrete-foreground: hsl(0, 0%, 100%);
-  --root-btn-color-discrete-foreground-hover: hsl(0, 0%, 100%);
-  --root-btn-color-install-background: hsl(207, 39%, 17%);
-  --root-btn-color-install-background-hover: hsl(207, 23%, 26%);
-  --root-btn-color-install-foreground: hsl(0, 0%, 100%);
-  --root-btn-color-discrete-background: hsla(0, 0%, 96%, 0.1);
-  --root-btn-color-primary-background: hsl(261, 52%, 59%);
-  --root-btn-color-primary-background-hover: hsl(261, 52%, 65%);
-  --root-btn-color-primary-foreground: hsl(0, 0%, 95%);
-  --root-btn-color-primary-shadow: hsl(261, 54%, 45%);
-  --root-btn-color-secondary-background: hsl(227, 92%, 55%);
-  --root-btn-color-secondary-background-hover: hsl(227, 92%, 60%);
-  --root-btn-color-secondary-foreground: hsl(0, 0%, 95%);
-  --root-btn-color-secondary-shadow: hsl(227, 92%, 35%);
+  --root-btn-color-primary-shadow: hsl(211, 100%, 25%);
 }
 
 :root[data-theme-mode=dark] {
-  --root-form-color-background: hsl(206, 100%, 11.65%);
-  --root-form-color-background-disabled: hsl(206, 100%, 7%);
+  --root-form-color-background: hsl(211, 70%, 14.5%);
+  --root-form-color-background-disabled: hsl(211, 70%, 10%);
   --root-form-color-border: hsla(0, 0%, 100%, 0.08);
   --root-form-color-border-disabled: hsla(0, 0%, 100%, 0.08);
-  --root-form-color-border-focus: hsl(261, 54%, 70%);
-  --root-form-color-check-background: hsl(261, 54%, 70%);
-  --root-form-color-check-focus-ring: hsl(261, 54%, 70%);
-  --root-form-color-check-foreground: hsl(206, 100%, 7%);
+  --root-form-color-border-focus: hsl(211, 100%, 46%);
+  --root-form-color-check-background: hsl(211, 100%, 46%);
+  --root-form-color-check-focus-ring: hsl(211, 100%, 46%);
+  --root-form-color-check-foreground: hsl(211, 70%, 10%);
   --root-form-color-invalid: hsl(0, 71%, 51%);
   --root-form-color-invalid-focus-ring: hsla(0, 71%, 51%, 0.25);
   --root-form-color-label: hsl(0, 0%, 95%);
   --root-form-color-legend: hsl(0, 0%, 95%);
   --root-form-color-placeholder: hsl(0, 0%, 60%);
-  --root-form-color-range-thumb-background: hsl(261, 54%, 70%);
-  --root-form-color-range-thumb-focus-ring: hsl(261, 54%, 70%);
+  --root-form-color-range-thumb-background: hsl(211, 100%, 46%);
+  --root-form-color-range-thumb-focus-ring: hsl(211, 100%, 46%);
   --root-form-color-range-track-background: hsla(0, 0%, 100%, 0.08);
-  --root-form-color-ring-focus: hsla(261, 54%, 70%, 0.25);
+  --root-form-color-ring-focus: hsla(211, 100%, 46%, 0.25);
   --root-form-color-select-foreground: hsl(0, 0%, 100%);
   --root-form-color-text: hsl(0, 0%, 97%);
   --root-form-color-valid: hsl(150, 100%, 33%);
@@ -1693,7 +1679,7 @@ legend {
 }
 
 :root[data-theme-mode=dark] {
-  --root-ide-color-header-background: hsl(0, 0%, 0%);
+  --root-ide-color-header-background: hsl(211, 70%, 5%);
 }
 
 :root[data-theme-mode=dark] {
@@ -1722,7 +1708,7 @@ legend {
 }
 
 :root[data-theme-mode=dark] {
-  --root-selection-color-background: hsl(261, 54%, 70%);
+  --root-selection-color-background: hsl(211, 100%, 46%);
   --root-selection-color-foreground: hsl(0, 0%, 95%);
 }
 
@@ -1748,8 +1734,18 @@ legend {
 [data-theme-mode=dark] select.form-control:not([multiple]):not([size]) {
   background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M12,12.507l-3.816,-3.815c-0.171,-0.172 -0.45,-0.172 -0.622,-0l-0.933,0.933c-0.172,0.172 -0.172,0.451 0,0.623l5.06,5.06c0.172,0.172 0.45,0.172 0.622,0l5.06,-5.06c0.172,-0.172 0.172,-0.451 -0,-0.623l-0.933,-0.933c-0.172,-0.172 -0.451,-0.172 -0.622,-0l-3.816,3.815Z" style="fill:hsl%280, 0%, 100%%29;"/%3e%3c/svg%3e');
 }
-[data-theme-mode=dark] .cta {
-  border-block-start: 1px solid var(--root-base-color-border);
+[data-theme-mode=dark] .site-navigation a:hover, [data-theme-mode=dark] .site-navigation a[aria-current=page] {
+  color: var(--root-base-color-secondary);
+}
+[data-theme-mode=dark] .open-search .btn--outline-primary {
+  --root-btn-color-primary-outline-border: hsla(0, 0%, 100%, 0.25);
+  --root-btn-color-primary-outline-foreground: hsl(0, 0%, 100%);
+}
+[data-theme-mode=dark] .hero-wrapper {
+  background-color: hsl(211, 70%, 12.5%);
+}
+[data-theme-mode=dark] .post-navigation-item__title {
+  color: var(--root-base-color-secondary);
 }
 
 .skip-link {
@@ -1983,7 +1979,7 @@ legend {
   margin-block-start: 1rem;
 }
 .getting-started-card picture {
-  --size: 4rem;
+  --size: 4.25rem;
   block-size: var(--size);
   flex-shrink: 0;
   inline-size: var(--size);
@@ -2330,8 +2326,8 @@ textarea.pagefind-ui__search-input {
   background-color: var(--root-base-color-background);
   border: 1px solid var(--root-base-color-border);
   border-radius: var(--doc-border-radius-md);
-  box-shadow: 0 0 3rem hsla(0, 0%, 0%, 0.1);
-  font-size: 0.9375rem;
+  box-shadow: 0 0 3rem hsla(0, 0%, 0%, 0.25);
+  font-size: 0.8375rem;
   margin-inline: auto;
   overflow: hidden;
 }
