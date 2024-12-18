@@ -158,11 +158,11 @@ Bazar provides the [`CookieDriver`](#cookie-driver) by default.
 
 ### Items
 
-Products can be attached to the cart by using the `Bazar\Models\Item` pivot model. This model holds all the critical information of the relationship between the cart and the product, such as `price`, `quantity`, `tax` and custom `properties`.
+Products can be attached to the cart by using the `Bazar\Models\Item` pivot model. This model holds all the critical information of the relationship between the cart and the product, such as `price`, `quantity` and custom `properties`.
 
-One product can be attached to the cart as different items. In fact, if a product will be attached to the cart with `properties` that are already present, the `quantity` will be increased automatically. However, if there is no product linked with the given properties, a new item will be created.
+The same product can be attached to the cart as different items. In fact, if a product will be attached to the cart with `properties` that are already present, the `quantity` will be increased automatically. However, if there is no product linked with the given properties, a new item will be created.
 
-This approach makes it simple to handle quantities, prices, and variations in a cart – even if the same product was attached multiple times but with different `properties`.
+This approach makes it simple to handle quantities, prices, and variations in a cart - even if the same product was attached multiple times but with different `properties`.
 
 ```php
 $item = Cart::addItem($product, 1, ['Size' => 'L']);
@@ -174,54 +174,9 @@ Cart::removeItem($item->id);
 
 ### Taxes
 
-The `Cart` model uses the `Itemable` trait, which allows the model to interact with its `Taxable` models. Taxes are stored on the `Item` and `Shipping` models.
-
-There are several methods to retrieve the aggregated tax for the model:
-
-```php
-use Cone\Bazar\Support\Facades\Cart;
-
-// Aggregate the calculated taxes
-$tax = Cart::getModel()->getTax();
-
-// Recalculate the taxes and update the items
-$tax = Cart::getModel()->calculateTax();
-
-// Recalculate the taxes without updating the items
-$tax = Cart::getModel()->calculateTax(false);
-```
-
 ### Discounts
 
-Unlike Taxes, discounts are stored directly on the model as an aggregated value.
-
-```php
-use Cone\Bazar\Support\Facades\Cart;
-
-// Get the discount attribute
-$tax = Cart::getModel()->getDiscount();
-
-// Recalculate and update the model
-$tax = Cart::getModel()->calculateDiscount();
-
-// Recalculate without updating the model
-$tax = Cart::getModel()->calculateDiscount(false);
-```
-
 ### Shipping
-
-```php
-use Cone\Bazar\Support\Facades\Cart;
-
-// Get the calculated shipping cost
-Cart::getModel()->shipping->getCost();
-
-// Recalculate the shipping cost
-Cart::getModel()->shipping->calculateCost();
-
-// Recalculate the shipping cost without updating the shipping model
-Cart::getModel()->shipping->calculateCost(false);
-```
 
 ### Lock/Unlock Mechanism
 
