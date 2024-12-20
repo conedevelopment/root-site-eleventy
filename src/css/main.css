@@ -2832,8 +2832,10 @@ pre[class*=language-] {
   max-inline-size: 15ch;
   text-wrap: balance;
 }
-.hero__title span {
-  animation: blink 4s infinite;
+@media (prefers-reduced-motion: no-preference) {
+  .hero__title span {
+    animation: blink 4s infinite;
+  }
 }
 .hero__title strong {
   color: hsl(0, 0%, 100%);
