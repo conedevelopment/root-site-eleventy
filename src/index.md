@@ -5,7 +5,7 @@ hero:
     note:
         caption: "Check out the rewritten Bazar documentation"
         url: "/docs/extensions/bazar/"
-    title: "Thoughtful <strong>Laravel Development</strong>"
+    title: "<span>Thoughtful</span> <strong>Laravel Development</strong>"
     description: "Root is an extendable Laravel admin package with first-party e-commerce solution."
     btn:
     -

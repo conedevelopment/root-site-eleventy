@@ -90,6 +90,10 @@
     max-inline-size: 15ch;
     text-wrap: balance;
 
+    span {
+      animation: blink 4s infinite;
+    }
+
     strong {
       color: hsl(0deg 0% 100%);
     }
@@ -110,5 +114,33 @@
     gap: spacer('m');
     justify-content: center;
     margin-top: 2.15rem;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: hsl(181deg 95% 96%);
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    color: hsl(181deg 95% 96%);
+    text-shadow:
+      0 0 5px hsl(181deg 95% 53%),
+      0 0 15px hsl(181deg 95% 53% / 50%),
+      0 0 20px hsl(181deg 95% 53%),
+      0 0 40px hsl(181deg 95% 53%),
+      0 0 60px hsl(170deg 95% 53%),
+      0 0 10px hsl(181deg 95% 53% / 50%),
+      0 0 100px hsl(170deg 95% 53%);
   }
 }
