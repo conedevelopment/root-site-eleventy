@@ -27,7 +27,7 @@
   }
 
   &__description {
-    @include breakpoint('md') {
+    @include breakpoint('lg') {
       font-size: responsive-font-size(1.1rem);
     }
   }
