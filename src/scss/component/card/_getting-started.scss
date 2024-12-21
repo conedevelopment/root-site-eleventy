@@ -27,7 +27,9 @@
   }
 
   &__description {
-    font-size: responsive-font-size(1.1rem);
+    @include breakpoint('md') {
+      font-size: responsive-font-size(1.1rem);
+    }
   }
 
   &__link {
