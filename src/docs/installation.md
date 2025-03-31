@@ -10,7 +10,7 @@ Before moving on, please check out the [Laravel documentation](https://laravel.c
 
 Requirements:
 
-- PHP `8.2+`
+- PHP `8.3+`
 - PHP `GD` and `EXIF` extensions
 - Laravel `^11.0`
 
@@ -31,7 +31,7 @@ After installing the package, run the `root:install` command. It will run the mi
 Also, you may populate your local database with _fake_ data. To do so, pass the `--seed` flag to the command.
 
 ```sh
-php artisan install:root --seed
+php artisan root:install --seed
 ```
 
 ### Publishing Assets
